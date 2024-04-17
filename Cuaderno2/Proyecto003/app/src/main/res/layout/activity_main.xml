@@ -14,12 +14,12 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
-        android:background="@android:color/holo_blue_bright"
+        android:background="@color/white"
         android:orientation="horizontal"
         android:weightSum="100">
         <EditText
             android:id="@+id/edtNumero1"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="50"
             android:ems="10"
@@ -27,18 +27,46 @@
             android:hint="Escribe un numero"/>
         <EditText
             android:id="@+id/edtNumero2"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="50"
             android:ems="10"
             android:inputType="text"
             android:hint="Escribe un numero"/>
     </LinearLayout>
-        <Button
-        android:id="@+id/btnSumar"
+
+    <RadioGroup
+        android:id="@+id/grupo1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15" >
+
+        <RadioButton
+            android:id="@+id/rbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sumar" />
+
+        <RadioButton
+            android:id="@+id/rbtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restar" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnOperar"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:text="Operar" />
+
+    <TextView
+        android:id="@+id/txt1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
-        android:text="SUMAR" />
-
+        android:text="Resultado:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 </LinearLayout>

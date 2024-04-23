@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Proyecto041</string>
+    <string name="programador">Desarrollador: Francisco</string>
+    <string name="version_aplicacion">1</string>
+    <string name="finalizar">Finalizar programa</string>
+    <string name="radiosuma">Sumar</string>
+    <string name="radioresta">Restar</string>
+    <string name="botonoperacion">Operar</string>
+</resources>
